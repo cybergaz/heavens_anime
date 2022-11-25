@@ -7,6 +7,7 @@ function Layout({children}) {
       <div className=' bg-main text-white'> 
           <Navbar />
           {children}
+
           <Footer />
       </div>
     </>

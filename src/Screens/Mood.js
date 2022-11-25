@@ -1,8 +1,15 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import Navbar from '../Layout/Navbar/Navbar'
 function Mood() {
+  const [vid, setVid]=useState(null);
+  const handleChange=(event)=>{
+    console.log(event)
+  }
   return (
-    <div>Mood</div>
+    <>
+    <Navbar></Navbar>
+    <input type="file" onchange={handleChange}></input>
+    </>
   )
 }
 

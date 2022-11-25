@@ -2,7 +2,7 @@ import React from 'react'
 
 function Rrelease() {
   return (
-    <div>Rrelease</div>
+    <div>Release</div>
   )
 }
 
