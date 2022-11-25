@@ -5,8 +5,7 @@ import Home from "./Screens/Home";
 import Mood from "./Screens/Mood";
 import Watchlist from "./Screens/Watchlist";
 import Description from "./Screens/Description";
-
-
+import Explore from "./Screens/Explore";
 function App() {
   return (
 
@@ -14,8 +13,10 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/mood" element={<Mood />} />
+      <Route path="/explore" element={<Explore />} />
       <Route path="/watchlist" element={<Watchlist />} />
       <Route path="/description" element={<Description />} />
+    
       <Route path='/github' component={() => { 
         window.location.replace('https://github.com/cybergaz'); 
         return null;

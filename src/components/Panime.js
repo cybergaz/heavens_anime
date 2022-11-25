@@ -2,7 +2,7 @@ import React from 'react'
 
 function Panime() {
   return (
-    <div>Panime</div>
+    <div>Anime</div>
   )
 }
 

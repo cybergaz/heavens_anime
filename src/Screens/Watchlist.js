@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Navbar from '../Layout/Navbar/Navbar'
 function Watchlist() {
-  return (
-    <div>Watchlist</div>
+ return (
+    <>
+    <Navbar></Navbar>
+    </>
   )
 }
 
