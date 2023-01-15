@@ -1,4 +1,4 @@
 # Heavens anime
 
-> nothing just out college project ,
+> nothing just our college project ,
 > most probably IG
