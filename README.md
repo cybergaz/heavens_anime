@@ -4,9 +4,8 @@
 
 ### setup and run locally
 
-> requirements
-    
-    ensure you have nodejs installed on your machine
+#### requirements
+>ensure you have nodejs installed on your machine
 
 ```bash
 git clone https://github.com/cybergaz/heavens_anime
