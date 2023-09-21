@@ -1,30 +1,31 @@
 import React from "react";
-import { BrowserRouter , Routes, Route } from "react-router-dom"
-import { createRoot } from "react-dom";
+import { Routes, Route } from "react-router-dom"
 import Home from "./Screens/Home";
 import Mood from "./Screens/Mood";
 import Watchlist from "./Screens/Watchlist";
 import Description from "./Screens/Description";
 import Navbar from "./Layout/Navbar/Navbar";
-import Footer from "./Layout/Footer/Footer";
 import Player from "./Screens/Player";
 
-
 function App() {
+
+  const recieve = value => {
+    console.log("woohooo you have recieved a value from a 2nd nested component which is :" + value)
+  }
   return (
     <>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/mood" element={<Mood />} />
-      <Route path="/player" element={<Player />} />
-      <Route path="/watchlist" element={<Watchlist />} />
-      <Route path="/description" element={<Description />} />
-    </Routes>
-    
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home pass={recieve} />} />
+        <Route path="/mood" element={<Mood />} />
+        <Route path="/player" element={<Player />} />
+        <Route path="/watchlist" element={<Watchlist />} />
+        <Route path="/description" element={<Description />} />
+      </Routes>
+
     </>
-    
+
   )
 }
 
@@ -56,6 +57,6 @@ export default App;
 //       </Routes>
 //       </div>  
 //     </div>
-  
+
 //     {/* </Box> */}
 //   </BrowserRouter>
