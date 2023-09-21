@@ -2,7 +2,10 @@
 
 #### anime streaming platform 
 
+<div align="center">
+
 ### setup and run locally
+</div>
 
 #### requirements
 >ensure you have nodejs installed on your machine
