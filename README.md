@@ -1,8 +1,11 @@
+<div align="center">
+
 # Heavens anime
 
 #### anime streaming platform 
 
-<div align="center">
+https://cybergaz.github.io/heavens_anime
+
 
 ### setup and run locally
 </div>
