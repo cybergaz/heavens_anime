@@ -6,7 +6,8 @@ import Topmovies from '../components/Topmovies';
 import Topshows from '../components/Topshows';
 import Layout from '../Layout/Layout';
 import Footer from '../Layout/Footer/Footer';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+// import { AnimationOnScroll } from 'react-animation-on-scroll';
+// import Navbar from '../Layout/Navbar/Navbar';
 
 // Handles logo click
 //  const handleLogoClick = () => {
@@ -16,41 +17,35 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 //   dispatch(setSearchQuery(""));
 // };
 
-
-
-function Home(prop) {
-
-  const joker = (value) => {
-    console.log(value);
-    prop.pass(value);
-  }
+function Home() {
   return (
     <>
-      <Layout >
-
-        <div id="home" className=' container top-0 left-0 right-0 min-h-screen px-2 mb-6 mt-10' >
+      <Layout>
+        <div
+          id="home"
+          className=" container top-0 left-0 right-0 min-h-screen px-2 mb-6 mt-10"
+        >
+          {/* <Navbar /> */}
           <Banner />
           <Panime />
           <Rrelease />
-          <Topmovies ghost={joker} />
+          <Topmovies />
           <Topshows />
-
         </div>
-
-
       </Layout>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
 
-
-{/* <a
-          href="https://www.instagram.com/cyber_gaz/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          hello {HiArrowNarrowDown}
-        </a> */}
+// {
+//   /* <a
+//           href="https://www.instagram.com/cyber_gaz/"
+//           target="_blank"
+//           rel="noreferrer"
+//         >
+//           hello {HiArrowNarrowDown}
+//         </a> */
+// }

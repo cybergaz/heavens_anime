@@ -14,8 +14,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import useWindowResize from '../backend/useWindowResize.ts';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-
-function Panime() {
+// Watch
+function Watch() {
   const [Popular, setPopular] = useState([]);
 
   const getPopular = async () => {
@@ -40,7 +40,17 @@ function Panime() {
 
   const { windowDimension } = useWindowResize();
   const { winWidth } = windowDimension;
-
+  const [info, setInfo] = useState([]);
+  const getinfo = async (id) => {
+    try {
+      const data = await AnimeApi.getInfo(id);
+      setInfo(data);
+      console.log(info);
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const itemCount = () => {
     if (winWidth <= 500) {
       return 3;
@@ -162,7 +172,10 @@ function Panime() {
                     />
                     Watch Now
                   </button>
-                  <button className=" hover:px-10 transition-all duration-300 bg-white bg-opacity-40 backdrop-blur-lg rounded-full w-auto flex justify-center items-center p-2 px-5 mx-auto max-sm:text-xs">
+                  <button
+                    className=" hover:px-10 transition-all duration-300 bg-white bg-opacity-40 backdrop-blur-lg rounded-full w-auto flex justify-center items-center p-2 px-5 mx-auto max-sm:text-xs"
+                    onClick={() => getinfo(anime.id)}
+                  >
                     Plus
                   </button>
                 </div>
@@ -175,4 +188,4 @@ function Panime() {
   );
 }
 
-export default Panime;
+export default Watch;
