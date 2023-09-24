@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/heavens_anime/static/css/main.93f7d0a5.css",
+    "main.js": "/heavens_anime/static/js/main.3cbdd7ba.js",
+    "static/media/fr5.png": "/heavens_anime/static/media/fr5.1a700afda3f84d1ec30c.png",
+    "index.html": "/heavens_anime/index.html",
+    "main.93f7d0a5.css.map": "/heavens_anime/static/css/main.93f7d0a5.css.map",
+    "main.3cbdd7ba.js.map": "/heavens_anime/static/js/main.3cbdd7ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93f7d0a5.css",
+    "static/js/main.3cbdd7ba.js"
+  ]
+}
